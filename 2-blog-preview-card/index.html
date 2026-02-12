@@ -51,45 +51,59 @@
       justify-content: center;
       align-items: center;
       min-height: 100vh;
+      margin: 0;
+      padding: 24px;
+      box-sizing: border-box;
     }
 
     h1 {
       color: #121212;
       font-size: 24px;
       font-weight: 800;
+      margin: 0;
+      margin-bottom: 12px
     }
 
     h1:hover {
       color: #f4d04e;
     }
 
-    p {
+    .description {
       color: #6b6b6b;
       font-size: 16px;
       font-weight: 300;
       line-height: 150%;
+      margin: 0;
+      margin-bottom: 24px
     }
 
-    h3 {
+    .author-name {
       color: #121212;
       font-size: 14px;
       font-weight: 800;
+      margin: 0;
+      margin-bottom: 12px
     }
 
-    h2 {
+    .date {
       color: #121212;
       font-size: 14px;
       font-weight: 500;
+      margin: 0;
+      margin-bottom: 12px
     }
 
     .card {
       background-color: white;
-      width: 336px;
-      height: 474px;
+      width: 100%;
+      max-width: 336px;
+      height: auto;
       border: 1px solid #121212;
       border-radius: 20px;
       box-shadow: 8px 8px;
       padding: 24px;
+      box-sizing: border-box;
+      height: auto;
     }
 
     .tag {
@@ -100,11 +114,15 @@
       display: inline-block;
       border-radius: 4px;
       padding: 6px 12px;
+      margin-bottom: 12px
     }
 
     .illustration {
+      width: 100%;
       height: 200px;
       border-radius: 10px;
+      object-fit: cover;
+      display: block;
       margin-bottom: 24px;
     }
 
@@ -136,20 +154,20 @@
 
     <section>
       <article>
-        <div class="tag">Learning</div>
+        <span class="tag">Learning</span>
 
         <div>
-          <h2>Published 21 Dec 2023</h2>
+          <p class="date">Published 21 Dec 2023</p>
         </div>
         
         <div>
           <h1>HTML & CSS foundations</h1>
-          <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
+          <p class="description">These languages are the backbone of every website, defining structure, content, and presentation.</p>
         </div>
         
         <div class="author">
-          <img class="icon" src="./assets/images/image-avatar.webp">
-          <h3>Greg Hooper</h3>
+          <img class="icon" alt="Author profile picture" src="./assets/images/image-avatar.webp">
+          <p class="author-name">Greg Hooper</p>
         </div>
       </article>
     </section>
