@@ -1,9 +1,19 @@
 ## Hello! 👋🏼
 
-These are the challenges I’ve been completing from the [Frontend Mentor website](https://www.frontendmentor.io/challenges).
-**I’d really appreciate any feedback or suggestions for improvement!**
+These are the challenges I’ve been working on from the [Frontend Mentor](https://www.frontendmentor.io/challenges) platform.
+
+I’m continuously learning and improving, so any feedback or suggestions are very welcome!
 
 > [!NOTE]
-In each project, there’s a folder called `/design` where you can find the layout I had to recreate. You’ll find both a mobile and a desktop version of the design.
+> Each project includes a `/design` folder containing the original layouts provided for the challenge.  
+> You’ll find both mobile and desktop versions of the design used as reference.
 
-Thank you! 😊
+Thank you for taking the time to check out my work! 😊
+
+---
+
+## Live Projects 🔗
+
+- 🔗 [QR Code Component](https://nunimavi.github.io/frontend-challenges/1-qr-code/)
+- 🔗 [Blog Preview Card](https://nunimavi.github.io/frontend-challenges/2-blog-preview-card/)
+- 🔗 [Social Links Profile](https://nunimavi.github.io/frontend-challenges/3-social-links-profile/)
