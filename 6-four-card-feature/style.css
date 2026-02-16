@@ -1,0 +1,145 @@
+main {
+    max-width: 1100px;
+    margin: 0;
+}
+
+body {
+    color: #4c4e61;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+
+    background-color: #fafafa;
+
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 200;
+    margin: 0;
+}
+
+h1 strong {
+    font-weight: 600;
+}
+
+h2 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        "supervisor team calculator"
+        "supervisor karma calculator";
+    align-items: center;
+    gap: 30px;
+    justify-items: center;
+}
+
+article {
+    background-color: white;
+    max-width: 280px;
+    height: 200px;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+    
+    position: relative;
+    overflow: hidden;
+}
+
+h3 {
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.description {
+    color: #697077;
+    font-size: 12px;
+    margin: 0;
+}
+
+article img {
+    width: 65px;
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+
+}
+
+.article-supervisor {
+    border-top: 3px solid #45d3d3;
+    grid-area: supervisor;
+}
+
+.article-team {
+    border-top: 3px solid #ea5353;
+    grid-area: team;
+}
+
+.article-karma {
+    border-top: 3px solid #fcaf4a;
+    grid-area: karma;
+}
+
+.article-calculator {
+    border-top: 3px solid #549ef2;
+    grid-area: calculator;
+}
+
+footer {
+    text-align: center;
+    font-size: 10px;
+    margin-top: 30px;
+}
+
+@media (max-width: 900px) {
+
+    .cards {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "supervisor"
+            "team"
+            "karma"
+            "calculator";
+    }
+
+    .header {
+        margin-bottom: 55px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    body {
+        font-size: 12px;
+    }
+
+    .desktop-only {
+        display: none;
+    }
+
+    article {
+        height: 150px;
+        padding: 20px;
+    }
+
+    article img {
+        width: 45px;
+    }
+}
