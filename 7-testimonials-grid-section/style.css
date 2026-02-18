@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: 15px;
+    background: #ecf2f8;
+}
+
+main {
+    padding: 60px 24px
+}
+
+.grid {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+     "daniel daniel jonathan kira"
+     "jeanette patrick patrick kira";
+}
+
+.grid article {
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.daniel {
+    background-color: #7541c8;
+    color: white;
+    grid-area: daniel;
+    background-image: url(./images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: top 0 right 60px;
+}
+
+.jonathan {
+    background-color: #48556a;
+    color: white;
+    grid-area: jonathan;
+}
+
+.kira {
+    background-color: white;
+    color: #19212e;
+    grid-area: kira;
+}
+
+.jeanette {
+    background-color: white;
+    color: #19212e;
+    grid-area: jeanette;
+}
+
+.patrick {
+    background-color: #19212e;
+    color: white;
+    grid-area: patrick;
+}
+
+.grid article > div {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3px;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: inherit;
+    margin: 0;
+}
+
+h2 {
+    font-weight: 300;
+    font-size: inherit;
+    margin: 0;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 0;
+}
+
+p {
+    font-weight: 300;
+    line-height: 1.5;
+    opacity: 0.75;
+    margin-bottom: 0;
+}
+
+img {
+    height: 32px;
+    border-radius: 50%;
+    margin: 0;
+}
+
+.daniel img, .patrick img {
+    border: 2px solid #c4a2f6;
+}
+
+footer {
+    text-align: center;
+    font-size: 10px;
+    padding: 0 0 30px;
+}
+
+@media (max-width: 800px) {
+    .grid {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "daniel"
+            "jonathan"
+            "jeanette"
+            "patrick"
+            "kira"
+    }
+
+    .daniel {
+        background-image: none;
+    }
+}
