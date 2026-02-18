@@ -19,3 +19,4 @@ Thank you for taking the time to check out my work! 😊
 - 🔗 [Social Links Profile](https://nunimavi.github.io/frontend-challenges/3-social-links-profile/)
 - 🔗 [Responsive Recipe Page](https://nunimavi.github.io/frontend-challenges/4-recipe-page/)
 - 🔗 [Responsive Four Card Feature](https://nunimavi.github.io/frontend-challenges/6-four-card-feature/)
+- 🔗 [Responsive Testimonials Grid Section](https://nunimavi.github.io/frontend-challenges/7-testimonials-grid-section/)
