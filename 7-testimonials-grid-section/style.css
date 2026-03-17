@@ -9,7 +9,8 @@ body {
 }
 
 main {
-    padding: 60px 24px
+    padding: 60px 24px;
+    margin: 0;
 }
 
 .grid {

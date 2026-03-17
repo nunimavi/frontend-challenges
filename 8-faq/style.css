@@ -1,0 +1,114 @@
+:root {
+    --font: 'Work Sans';
+
+    --white: #ffffff;
+    --color1: #f9f0ff;
+    --color2: #8c6991;
+    --color3: #2f1533;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
+/** GLOBALES **/
+
+.center-text {
+    text-align: center;
+}
+
+body {
+    color: var(--color2);
+    font-family: var(--font);
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2;
+
+    background-image: url("./assets/images/background-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: var(--color1);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh /** altura mínima -> 100% de la altura visible de la pantalla (vh = viewport height) **/
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--font);
+    margin: 0;
+}
+
+h1 {
+    color: var(--color3);
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+h2 {
+    color: var(--color3);
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+/** CARD **/
+
+.container {
+    background-color: var(--white);
+    padding: 3.5rem;
+    border-radius: 2rem;
+    width: 55rem;
+}
+
+.container__title {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+/** QUESTIONS **/
+
+.faq-item {
+    margin-bottom: 1rem;
+}
+
+.question {
+    background: none;
+    border: none;
+    padding: 0;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    text-align: left;
+    font: inherit;
+    color: inherit;
+
+    cursor: pointer;
+}
+
+h2:hover {
+    color: rgb(155, 51, 221);
+}
+
+/** RESPONSES **/
+
+.response {
+    display: none; /** oculta todos los elementos con clase .response **/
+}
+
+.faq-item.active .response {
+    display: block; /** selecciona los elementos con clase .response que estén dentro de un elemento con clase .faq-item y que este último tenga la clase .active -> el display block hace que vuelva a verse **/
+}
+
+/** ATTRIBUTION **/
+
+.attribution {
+    margin-top: 5rem;
+}
